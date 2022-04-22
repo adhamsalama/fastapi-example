@@ -1,6 +1,6 @@
 # FastAPI
 
-This is a FastAPI example.
+This is a CRUD FastAPI example.
 
 Features:
 
