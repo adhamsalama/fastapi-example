@@ -15,4 +15,3 @@ class ItemDocument(Document):
     price: float = Field(gt=0, le=100)
     is_offer: Optional[bool] = None
     user_id: PydanticObjectId
-    # pass
