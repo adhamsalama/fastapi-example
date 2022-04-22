@@ -1,0 +1,5 @@
+fastapi~=0.64
+beanie~=1.1
+uvicorn~=0.13
+bcrypt~=3.2
+python-decouple~=3.4
