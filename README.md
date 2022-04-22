@@ -9,6 +9,10 @@ Features:
 -   User Model
 -   Item Model
 
+To install requirements:
+
+`pip install -r requirements.txt`
+
 To run:
 
 `uvicorn app:app --reload;`
