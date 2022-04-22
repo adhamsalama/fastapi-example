@@ -8,3 +8,7 @@ Features:
 -   MongoDB as a database (Using Beanie ODM)
 -   User Model
 -   Item Model
+
+To run:
+
+`uvicorn app:app --reload;`
