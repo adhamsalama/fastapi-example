@@ -1,4 +1,3 @@
-from typing import Optional
 from models.item import Item, ItemDocument
 from fastapi import (
     APIRouter,
@@ -18,7 +17,7 @@ router = APIRouter(
 
 
 @router.get('/search')
-async def search(request: Request, q: Optional[str] = Query(None)):
+async def search(request: Request, q: str | None = Query(None)):
     results = await ItemDocument.find({'user_id': PydanticObjectId(request.state.current_user['id']), 'name': {'$regex': q}}).to_list()
     return results
 
